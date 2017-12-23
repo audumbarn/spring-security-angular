@@ -1,5 +1,6 @@
 package com.projects.ssa.controllers;
 
+import java.security.Principal;
 import java.util.HashMap;
 import java.util.Map;
 import java.util.UUID;
@@ -19,4 +20,9 @@ public class UIController {
 		return model;
 		
 	}
+	
+	@RequestMapping("/user")
+	  public Principal user(Principal user) {
+	    return user;
+	  }
 }
